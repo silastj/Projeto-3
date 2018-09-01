@@ -1,0 +1,55 @@
+body {       
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.page {   
+    margin-top:30px;
+    position: static;
+    text-align:center;
+    display: block;
+}
+.sociais {
+    width:60px;
+    background:#ccc;
+    border-radius:10px 0 0 10px;
+    padding:10px 0 10px 1px;
+    position:fixed;
+    top:30px;
+    right:-40px;
+    transition:rigth .3s ease-in-out;
+    z-index:9999;
+}
+.sociais:hover {
+    right:0;
+}
+.sociais div{
+    background: white;
+    border-radius:50%;
+    width:0px;
+    margin:5px;
+}
+hr {
+    position:absolute;
+    bottom:25px;
+    width:100%;
+}
+.footer p {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    
+}
+@media only screen and (max-width:375px) {
+
+.sociais div a img {
+        width:30px;
+        height:30px;
+    }
+.sociais {
+    width:50px;
+} 
+.sociais:hover {
+    right:-12px;
+}
